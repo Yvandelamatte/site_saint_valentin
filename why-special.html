@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pourquoi tu es spéciale - Saint Valentin</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assure-toi que le fichier styles.css est correctement lié -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #444;
+            background-color: #f9e1e0; /* Un rose pâle */
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        h1 {
+            color: #b64545; /* Un rouge doux */
+        }
+        h2 {
+            color: #d68a8a; /* Un rose plus soutenu */
+        }
+        p {
+            margin: 20px 0;
+        }
+        .button-container {
+            margin-top: 50px; /* Espacement supplémentaire par rapport au titre */
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #b64545;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px; /* Ajout de marges entre les boutons */
+        }
+        /* Style pour la sélection déroulante */
+        .dropdown {
+            display: none; /* Par défaut, caché */
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            .button-container {
+                display: none; /* Cacher les boutons lorsque l'espace est limité */
+            }
+            .dropdown {
+                display: block; /* Afficher la sélection déroulante */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Pourquoi tu es spéciale</h1>
+    <div class="button-container">
+        <a href="index.html" class="button">Accueil</a>
+        <a href="about-us.html" class="button">À propos de nous</a>
+        <a href="our-moments.html" class="button">Nos Moments Préférés</a>
+        <a href="future-hopes.html" class="button">Nos espoirs pour l'avenir</a>
+    </div>
+
+    <!-- Sélection déroulante pour les boutons -->
+    <select class="dropdown" onchange="location = this.value;">
+        <option value="#">Choisir une page...</option>
+        <option value="index.html">Accueil</option>
+        <option value="about-us.html">À propos de nous</option>
+        <option value="our-moments.html">Nos Moments Préférés</option>
+        <option value="future-hopes.html">Nos espoirs pour l'avenir</option>
+    </select>
+
+    <!-- Le reste du contenu -->
+    <h2>Pourquoi tu es spéciale</h2>
+    <p>Tu es la seule que j'imagine pour mon futur. Tu es plus qu'une simple partenaire, tu es mon égale, ma complice et ma meilleure amie. Voici pourquoi tu es si spéciale pour moi :</p>
+    <h3>La seule qui pense à moi sans me prendre pour son taxi</h3>
+    <p>Tu me soutiens et tu m'encourages dans mes projets sans jamais m'utiliser pour tes propres intérêts. Tu es là pour moi dans les bons et les mauvais moments, sans jamais attendre plus de moi que je ne puisse donner.</p>
+    <h3>Une relation d'égal à égal</h3>
+    <p>Nous sommes deux individus uniques qui se complètent et se soutiennent mutuellement. Notre relation est basée sur le respect, la confiance et la compréhension mutuelle. Nous sommes égaux dans notre engagement l'un envers l'autre.</p>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Moments Préférés - Saint Valentin</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assure-toi que le fichier styles.css est correctement lié -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #444;
+            background-color: #f9e1e0; /* Un rose pâle */
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        h1 {
+            color: #b64545; /* Un rouge doux */
+        }
+        h2 {
+            color: #d68a8a; /* Un rose plus soutenu */
+        }
+        p {
+            margin: 20px 0;
+        }
+        .button-container {
+            margin-top: 50px; /* Espacement supplémentaire par rapport au titre */
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #b64545;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px; /* Ajout de marges entre les boutons */
+        }
+        /* Style pour la sélection déroulante */
+        .dropdown {
+            display: none; /* Par défaut, caché */
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            .button-container {
+                display: none; /* Cacher les boutons lorsque l'espace est limité */
+            }
+            .dropdown {
+                display: block; /* Afficher la sélection déroulante */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Nos Moments Préférés</h1>
+    <div class="button-container">
+        <a href="index.html" class="button">Accueil</a>
+        <a href="about-us.html" class="button">À propos de nous</a>
+        <a href="why-special.html" class="button">Pourquoi tu es spéciale</a>
+        <a href="future-hopes.html" class="button">Nos espoirs pour l'avenir</a>
+    </div>
+
+    <!-- Sélection déroulante pour les boutons -->
+    <select class="dropdown" onchange="location = this.value;">
+        <option value="#">Choisir une page...</option>
+        <option value="index.html">Accueil</option>
+        <option value="about-us.html">À propos de nous</option>
+        <option value="why-special.html">Pourquoi tu es spéciale</option>
+        <option value="future-hopes.html">Nos espoirs pour l'avenir</option>
+    </select>
+
+    <!-- Le reste du contenu -->
+    <h2>Nos Moments Préférés</h2>
+    <p>Il y a tant de moments spéciaux que nous avons partagés ensemble, mais certains restent gravés dans nos cœurs :</p>
+    <h3>Moments passés rien qu'à deux dans la voiture jusqu'à des 5h du matin</h3>
+    <p>Nos conversations sans fin, nos rires et nos échanges sincères pendant ces longues nuits de conduite ont créé des souvenirs inoubliables.</p>
+    <h3>Moments où nous cuisinons ensemble des pâtisseries et des gâteaux</h3>
+    <p>La cuisine est devenue notre terrain de jeu où nous exprimons notre créativité et notre amour. Ces moments de préparation et de dégustation sont toujours remplis de tendresse et de complicité.</p>
+    <h3>Nos restaurants du 1<sup>er</sup> du mois pour célébrer notre amour</h3>
+    <p>Chaque premier du mois, nous nous retrouvons dans un restaurant  pour célébrer notre amour et notre engagement l'un envers l'autre. Ces dîners sont des moments de joie et de reconnaissance pour tout ce que nous avons partagé.</p>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Félicitations</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f9e1e0; /* Un rose pâle */
+        }
+        h1 {
+            color: #b64545; /* Un rouge doux */
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .heart {
+            font-size: 100px;
+            color: red;
+            margin-bottom: 20px;
+            animation: beat .5s infinite; /* Référence à l'animation nommée "beat" */
+        }
+        @keyframes beat {
+            0%, 100% { transform: scale(1); } /* État initial et final où le cœur est à sa taille normale */
+            50% { transform: scale(1.1); } /* État intermédiaire où le cœur grossit de 10% */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Félicitations!</h1>
+<p>Vous allez passer la Saint-Valentin avec Bordenca Guillaume, votre amoureux 😊👍</p>
+<div class="heart">❤️</div>
+
+</body>
+</html>

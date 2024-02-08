@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos espoirs pour l'avenir - Saint Valentin</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        #pageContent {
+            width: 100%;
+            height: 100%;
+            background-color: #f9e1e0; /* Un rose pâle */
+            position: relative;
+            transition: transform 0.5s ease-in-out;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+            text-align: center;
+        }
+        h1 {
+            color: #b64545; /* Un rouge doux */
+        }
+        h2 {
+            color: #d68a8a; /* Un rose plus soutenu */
+        }
+
+        h3{
+            text-align: center;
+        }
+        p, .button-container, select, #scroll-up {
+            font-family: 'Roboto', sans-serif;
+            color: #444;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #b64545;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px; /* Ajout de marges entre les boutons */
+        }
+        .dropdown {
+            display: none; /* Par défaut, caché */
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            .button-container {
+                display: none; /* Cacher les boutons lorsque l'espace est limité */
+            }
+            .dropdown {
+                display: block; /* Afficher la sélection déroulante */
+            }
+        }
+        #scroll-up {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: #b64545;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+            font-size: 24px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .hidden {
+            display: none;
+        }
+        .show {
+            display: block;
+            position: absolute;
+            top: 50%; /* Centre le bouton verticalement */
+            left: 50%; /* Centre le bouton horizontalement */
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            background-color: #b64545;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<div id="pageContent">
+    <h1>Nos espoirs pour l'avenir</h1>
+    <div class="button-container">
+        <a href="index.html" class="button">Accueil</a>
+        <a href="about-us.html" class="button">À propos de nous</a>
+        <a href="our-moments.html" class="button">Nos Moments Préférés</a>
+        <a href="why-special.html" class="button">Pourquoi tu es spéciale</a>
+    </div>
+
+    <select class="dropdown" onchange="location = this.value;">
+        <option value="#">Choisir une page...</option>
+        <option value="index.html">Accueil</option>
+        <option value="about-us.html">À propos de nous</option>
+        <option value="our-moments.html">Nos Moments Préférés</option>
+        <option value="why-special.html">Pourquoi tu es spéciale</option>
+    </select>
+
+    <h2>Nos espoirs pour l'avenir</h2>
+    <p>Nous avons tant d'espoirs et de rêves pour notre avenir ensemble :</p>
+    <h3>Deux enfants et une maison spacieuse avec un magnifique jardin</h3>
+    <p>Nous espérons fonder une famille et voir nos enfants grandir dans un environnement chaleureux et sécurisé. Notre maison sera notre refuge, avec un jardin où nous pourrons partager de précieux moments en famille.</p>
+    <h3>Se marier et s'aimer jusqu'à la mort</h3>
+    <p>Nous rêvons de nous unir dans le mariage, de promettre notre amour éternel devant nos proches. Notre amour grandira chaque jour, et nous resterons unis, quoi qu'il arrive, jusqu'à la fin de nos jours.</p>
+
+    <div id="scroll-up" onclick="scrollToTop()">⬆️</div>
+</div>
+
+<div style="position:fixed; bottom:20px; width:100%; text-align:center; cursor:pointer;">
+    <span class="drag-instruction">Glissez vers le haut pour une surprise !</span>
+</div>
+
+<button class="hidden" id="valentineButton" onclick="window.location.href='valentine.html';">Will you be my Valentine?</button>
+
+<script>
+    document.querySelector('.drag-instruction').addEventListener('click', function(event) {
+        document.getElementById('pageContent').style.transform = 'translateY(-100%)';
+        setTimeout(() => {
+            document.getElementById('valentineButton').classList.remove('hidden');
+            document.getElementById('valentineButton').classList.add('show');
+        }, 500); // Attend que la page soit complètement remontée
+    });
+</script>
+
+</body>
+</html>

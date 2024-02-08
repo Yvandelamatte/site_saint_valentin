@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos de nous - Saint Valentin</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assure-toi que le fichier styles.css est correctement lié -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #444;
+            background-color: #f9e1e0; /* Un rose pâle */
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            font-family: 'Playfair Display', serif;
+        }
+        h1 {
+            color: #b64545; /* Un rouge doux */
+        }
+        h2 {
+            color: #d68a8a; /* Un rose plus soutenu */
+        }
+        p {
+            margin: 20px 0;
+        }
+        .button-container {
+            margin-top: 50px; /* Espacement supplémentaire par rapport au titre */
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #b64545;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px; /* Ajout de marges entre les boutons */
+        }
+        /* Style pour la sélection déroulante */
+        .dropdown {
+            display: none; /* Par défaut, caché */
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            .button-container {
+                display: none; /* Cacher les boutons lorsque l'espace est limité */
+            }
+            .dropdown {
+                display: block; /* Afficher la sélection déroulante */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>À propos de nous</h1>
+    <div class="button-container">
+        <a href="index.html" class="button">Accueil</a>
+        <a href="our-moments.html" class="button">Nos Moments Préférés</a>
+        <a href="why-special.html" class="button">Pourquoi tu es spéciale</a>
+        <a href="future-hopes.html" class="button">Nos espoirs pour l'avenir</a>
+    </div>
+
+    <!-- Sélection déroulante pour les boutons -->
+    <select class="dropdown" onchange="location = this.value;">
+        <option value="#">Choisir une page...</option>
+        <option value="index.html">Accueil</option>
+        <option value="our-moments.html">Nos Moments Préférés</option>
+        <option value="why-special.html">Pourquoi tu es spéciale</option>
+        <option value="future-hopes.html">Nos espoirs pour l'avenir</option>
+    </select>
+
+    <!-- Le reste du contenu -->
+    <h2>Qui sommes-nous?</h2>
+    <p>Nous sommes un jeune couple qui a trouvé l'amour il y a seulement quelques mois. Nous sommes remplis de bonheur et d'excitation pour ce que l'avenir nous réserve.</p>
+    <h2>Notre histoire</h2>
+    <p>Notre histoire a commencé récemment, mais chaque moment passé ensemble a été magique. Nous avons déjà créé tant de souvenirs inoubliables et nous avons hâte d'en créer encore plus.</p>
+    <h2>Voyage au Canada</h2>
+    <p>Bientôt, ma chère Louise, tu t'envoleras pour une aventure incroyable au Canada. Même si la distance nous séparera temporairement, je te promets de rester fidèle à notre amour et de t'attendre avec impatience. Ce voyage sera une opportunité pour nous de renforcer notre lien et de nous rendre compte encore plus de la force de notre amour.</p>
+    <h2>Notre engagement</h2>
+    <p>Je m'engage à être là pour toi, peu importe la distance qui nous sépare. Notre amour est fort et véritable, et rien ne pourra jamais le briser. Je t'attendrai avec impatience jusqu'à ce que tu reviennes dans mes bras, et nous continuerons à construire notre avenir ensemble.</p>
+</body>
+</html>
