@@ -32,6 +32,11 @@
 
         h3{
             text-align: center;
+            margin: 10px;
+        }
+        iframe{
+            display: block;
+            margin: 0 auto; /* Pour centrer horizontalement */
         }
         p, .button-container, select, #scroll-up {
             font-family: 'Roboto', sans-serif;
@@ -52,14 +57,7 @@
             display: none; /* Par défaut, caché */
             margin-top: 20px;
         }
-        @media screen and (max-width: 600px) {
-            .button-container {
-                display: none; /* Cacher les boutons lorsque l'espace est limité */
-            }
-            .dropdown {
-                display: block; /* Afficher la sélection déroulante */
-            }
-        }
+        
         #scroll-up {
             position: fixed;
             bottom: 10px;
@@ -75,6 +73,7 @@
             line-height: 50px;
             text-align: center;
         }
+        
         .hidden {
             display: none;
         }
@@ -116,8 +115,12 @@
     <p>Nous avons tant d'espoirs et de rêves pour notre avenir ensemble :</p>
     <h3>Deux enfants et une maison spacieuse avec un magnifique jardin</h3>
     <p>Nous espérons fonder une famille et voir nos enfants grandir dans un environnement chaleureux et sécurisé. Notre maison sera notre refuge, avec un jardin où nous pourrons partager de précieux moments en famille.</p>
+    <h3>Des belles voitures</h3>
+    <p>Nous rêvons de posséder de magnifiques voitures, symboles de notre réussite et de notre style de vie. Parcourir les routes ensemble dans des voitures élégantes sera une expérience exaltante et mémorable pour nous.</p>
     <h3>Se marier et s'aimer jusqu'à la mort</h3>
     <p>Nous rêvons de nous unir dans le mariage, de promettre notre amour éternel devant nos proches. Notre amour grandira chaque jour, et nous resterons unis, quoi qu'il arrive, jusqu'à la fin de nos jours.</p>
+    <h3>Voici la musique qui décrit le mieux ce que j'imagine pour notre futur:</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3JWTaaS7LdU?si=_abn692pe-p_a8Rb&amp;start=45" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
     <div id="scroll-up" onclick="scrollToTop()">⬆️</div>
 </div>
